@@ -1,0 +1,29 @@
+{
+  "name": "yantrashala",
+  "homepage": "https://github.com/yantrashala/yantrashala.github.io",
+  "authors": [
+    "yantrashala page owners"
+  ],
+  "description": "Yantrashala is Sapient Nitro's Open Source initiative. Here you can find open source modules that was developed with a little pinch of innovation and a lot of passion for opensource.",
+  "main": "",
+  "keywords": [
+    "yantrashala",
+    "blog"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "octicons": "^3.5.0",
+    "hover": "^2.0.2",
+    "underscore": "^1.8.3",
+    "flag-icon-css": "^2.3.1"
+  }
+}
