@@ -2,7 +2,6 @@
 
 .site-header {
     color: #fff;
-    background: #4183c4;
 }
 
 .site-header #site-header-brand {
@@ -10,25 +9,29 @@
 }
 
 .site-header .site-header-nav-item {
-    color: #9acfea;
+    color: #000;
 }
 
 .site-header a:hover {
-    color: #fff;
+    color: #2098d1;
 }
 
 .jumbotron {
-    background: #4183c4;
+    background: #c7e8ef;
 }
 
 .site-header.site-header-nav-scrolled a {
-    color: #2e2e2e;
+    color: rgba(0, 0, 0, 0.87);
 }
 
 .site-header.site-header-nav-scrolled #site-header-brand {
-    color: #2e2e2e !important;
+    color: rgba(0, 0, 0, 0.87) !important;
 }
 
 .site-header.site-header-nav-scrolled a:hover {
-    color: #4183c4;
+    color: #111111;
+}
+
+.jumbotron .container {
+    padding: 0 40px;
 }

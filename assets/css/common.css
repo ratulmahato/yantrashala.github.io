@@ -3,14 +3,18 @@
     padding: 0;
 }
 
+body {
+    background: #f4f0ec;
+}
+
 .show-me {
     display: none;
+    padding: 10px;
 }
 
 /** Header **/
 .site-header {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 5px 0;
     width: 100%;
     position: fixed;
     margin: 40px 0 30px 0;
@@ -18,10 +22,8 @@
     left: 0 !important;
     right: 0;
     z-index: 103;
-
-    color: #000;
-    background: #fff;
-
+    color: #f8efc0;
+    background: transparent;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -32,6 +34,11 @@
 .site-header #site-header-brand {
     color: #2e2e2e;
     float: left;
+}
+
+.site-header #site-header-brand img {
+    width: 96px;
+    height: 96px;
 }
 
 .site-header a {
@@ -65,18 +72,17 @@
 
 /******* Scroll Start *******/
 .site-header {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px #c7e8ef;
 }
 
 .site-header.site-header-nav-scrolled {
     margin: 0;
-    background-color: white;
-
-    -webkit-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
-    -moz-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
-    -ms-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
-    -o-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
-    box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+    background-color: #ee6665;
+    -webkit-box-shadow: 0 0.125em 0.125em 0 #ee6665;
+    -moz-box-shadow: 0 0.125em 0.125em 0 #ee6665;
+    -ms-box-shadow: 0 0.125em 0.125em 0 #ee6665;
+    -o-box-shadow: 0 0.125em 0.125em 0 #ee6665;
+    box-shadow: 0 0.125em 0.125em 0 #ee6665;
 }
 
 .site-header.site-header-nav-scrolled .show-me {
@@ -84,22 +90,27 @@
     color: #000000;
 }
 
+.site-header.site-header-nav-scrolled + .content > .jumbotron {
+    background: #ee6665;
+}
+
 /******* Scroll End *******/
 
 /** Jumbotron **/
 .jumbotron {
     padding-top: 200px;
-    padding-bottom: 100px;
-    color: #fff;
+    padding-bottom: 200px;
+    color: rgba(0, 0, 0, .87);;
 }
 
 .jumbotron a {
-    color: #fff;
+    color: rgba(0, 0, 0, .87);
     text-decoration: none;
 }
 
 .jumbotron #jumbotron-meta-info {
-    margin-top: 20px;;
+    margin-top: 20px;
+    font-size: 30px;
 }
 
 .jumbotron .meta-info {
@@ -108,7 +119,7 @@
 }
 
 .jumbotron.meta-info, .jumbotron .meta-info .octicon {
-    font-size: 18px;
+    font-size: 40px;
 }
 
 /** Footer **/
@@ -129,7 +140,8 @@
 }
 
 .site-footer .octicon-mark-github:hover {
-    color: #bbb;
+    color: #ee6665;
+    cursor: pointer;
 }
 
 /** Post List **/
