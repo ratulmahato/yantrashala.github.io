@@ -1,0 +1,54 @@
+<footer class="container">
+
+    <div class="site-footer">
+
+        <div class="copyright pull-left">
+            Powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a
+                href="https://github.com/vichu1988/Yummier-Jekyll">Yummier <span
+                class="octicon octicon-heart"></span></a>
+        </div>
+
+        <a href="https://github.com/yantrashala" target="_blank" aria-label="view source code">
+            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+        </a>
+
+        <div class="pull-right">
+            <a href="javascript:window.scrollTo(0,0)">TOP</a>
+        </div>
+
+    </div>
+
+    <!-- library -->
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/bower_components/geopattern/js/geopattern.min.js"></script>
+    <!--&lt;!&ndash; My JS &ndash;&gt;
+    <script type="text/javascript" src="/assets/js/script.js"></script>-->
+    <script>
+        $(document).ready(function () {
+
+            // Enable bootstrap tooltip
+            $("body").tooltip({selector: '[data-toggle=tooltip]'});
+
+            $('.geopattern').each(function () {
+                $(this).geopattern($(this).data('pattern-id'));
+            });
+
+            $(window).scroll(function () {
+
+                var scrollPos = $(this).scrollTop();
+
+                if ($(window).scrollTop() > 70) {
+                    $('.site-header').addClass('site-header-nav-scrolled');
+                } else {
+                    $('.site-header').removeClass('site-header-nav-scrolled');
+                }
+            });
+        });
+    </script>
+
+    {% for javascript in page.javascript %}
+    <script src="/assets/js/{{page.javascript}}"></script>
+    {% endfor %}
+
+</footer>
