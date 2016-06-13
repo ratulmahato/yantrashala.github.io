@@ -1,8 +1,7 @@
 <header class="site-header">
     <div class="container">
-        <a id="site-header-brand" href={{site.company_url}} title="{{ site.name }}">
-            <img src="{{site.company_brand_icon}}" alt="publicis.sapient">
-            <span class="show-me">{{site.name}}</span>
+        <a id="site-header-brand" href="/" title="{{ site.name }}">
+            <img src="{{site.logo}}" height="40px" width="40px"></span> {{ site.name }}
         </a>
         <nav class="site-header-nav" role="navigation">
             {% for nav in site.navs %}
