@@ -1,7 +1,8 @@
 /** Only for index.html **/
 
-.site-header {
+.site-header{
     color: #fff;
+    background: #4183c4;
 }
 
 .site-header #site-header-brand {
@@ -9,29 +10,25 @@
 }
 
 .site-header .site-header-nav-item {
-    color: #000;
+    color: #9acfea;
 }
 
 .site-header a:hover {
-    color: #2098d1;
+    color: #fff;
 }
 
 .jumbotron {
-    background: #c7e8ef;
+    background: #4183c4;
 }
 
 .site-header.site-header-nav-scrolled a {
-    color: rgba(0, 0, 0, 0.87);
+    color: #2e2e2e;
 }
 
 .site-header.site-header-nav-scrolled #site-header-brand {
-    color: rgba(0, 0, 0, 0.87) !important;
+    color: #2e2e2e !important;
 }
 
 .site-header.site-header-nav-scrolled a:hover {
-    color: #111111;
-}
-
-.jumbotron .container {
-    padding: 0 40px;
+    color: #4183c4;
 }

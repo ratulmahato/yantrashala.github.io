@@ -5,25 +5,17 @@ css: ['index.css', 'sidebar-popular-repo.css']
 ---
 <section class="jumbotron">
     <div class="container">
-        <div id="jumbotron-meta-info">
-            {{ site.company }}
-        <span class="meta-info hvr-grow">
-                <span class="octicon octicon-organization"></span>
-                <a href="{{ site.company_url }}" target="_blank"></a>
-        </span><span class="meta-info hvr-grow">
-                <span class="octicon octicon-mark-github"></span>
-                <a href="{{ site.github_url }}" target="_blank"></a></span>
-        </div>
-        <h1>{{ site.title }}</h1>
+        <h2>{{ site.title }}</h2>
     </div>
 </section>
 <section class="content container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="row">
-                {% include repo-list.html %}
-            </div>
-        </div>
-    </div>
-</section>
 
+    <div class="row">
+
+        <div class="col-md-8">
+            {% include open-source-page.html %}
+        </div>
+
+    </div>
+
+</section>
