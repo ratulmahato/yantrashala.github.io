@@ -32,3 +32,19 @@
 .site-header.site-header-nav-scrolled a:hover {
     color: #4183c4;
 }
+
+#contributors{
+
+}
+
+#contributors .main-anchor{
+  height:80px;
+  border-left: 5px solid #aeaeae;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin: 10px 0;
+}
+
+#contributors a.main-anchor:hover{
+  border-left: 7px solid #444;
+}

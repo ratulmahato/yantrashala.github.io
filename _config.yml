@@ -65,6 +65,10 @@ navs:
     label: Blog
 
   -
+    href: /stats.html
+    label: Stats
+
+  -
     href: /
     label: Bookmark
 
