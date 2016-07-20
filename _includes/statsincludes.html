@@ -2,9 +2,9 @@
 <div id="container-open-source">
   <section class="container">
     <canvas id="myChart" width="800" height="400"></canvas>
-    <div id="contributors">
-      {{site.github.nodecontributors.totalUsers}}
-    </div>
+    <h2 id="contibute-title">
+      List of NPM modules contributing to the downloads
+    </h2>
   </section>
 
 </div>
@@ -24,18 +24,8 @@ $(document).ready(function(){
         datasets: [{
           label: '# of Downloads',
           data: DownloadsArray,
-          backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-          ],
-          borderColor: [
-            'rgba(255,99,132,1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-          ],
+          backgroundColor: ['rgba(0,188,212, 0.6)', 'rgba(3,169,244, 0.6)', 'rgba(33,150,243, 0.6)', 'rgba(21,101,192, 0.6)'],
+          borderColor: ['rgba(0,188,212,1)', 'rgba(3,169,244, 1)', 'rgba(33,150,243, 1)', 'rgba(21,101,192, 1)'],
           borderWidth: 1
         }]
       },
@@ -53,9 +43,11 @@ $(document).ready(function(){
 
   function createPackageBox(data){
     data.packages.map(function(package){
-      var mainAnchor = $('<a>').addClass('main-anchor col-sm-6 col-md-4').attr('href', 'https://www.npmjs.com/package/'+package.name);
+      var mainAnchorOuter = $('<a>').addClass('col-sm-6 col-md-4').attr({'href': 'https://www.npmjs.com/package/'+package.name, 'target': '_blank'});
+      var mainAnchor = $('<div>').addClass('main-anchor').appendTo(mainAnchorOuter);
       $('<span>').addClass('package-name').text(package.name).appendTo(mainAnchor);
-      $('#contributors').append(mainAnchor);
+      $('<span>').addClass('octicon octicon-globe').prependTo($('<span>').addClass('package-downloads pull-right').text(package.downloads).appendTo(mainAnchor));
+      $('#contributors').append(mainAnchorOuter);
     })
   }
 
@@ -66,7 +58,6 @@ $(document).ready(function(){
   .done(function(data){
     createChart(data);
     createPackageBox(data);
-    console.log(data);
   })
 
   // Enable bootstrap tooltip
