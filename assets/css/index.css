@@ -78,3 +78,8 @@ span.package-downloads{
 #contributors span.octicon.octicon-globe{
   margin-right: 5px;
 }
+
+#canvasContainer{
+  max-width: 800px;
+  margin: 0 auto;
+}
