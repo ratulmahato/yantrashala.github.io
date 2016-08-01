@@ -4,18 +4,18 @@ menu: home
 css: ['index.css', 'sidebar-popular-repo.css']
 ---
 <section class="jumbotron">
-    <div class="container">
-        <h2>{{ site.title }}</h2>
-    </div>
 </section>
 <section class="content container">
 
     <div class="row">
 
         <div class="col-md-8">
-            {% include open-source-page.html %}
+            {% include statsincludes.html %}
         </div>
 
     </div>
 
+</section>
+<section id="contributor-container">
+  <div id="contributors" class="container"></div>
 </section>

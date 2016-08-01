@@ -1,17 +1,15 @@
 {
-  "name": "yantrashala",
-  "homepage": "https://github.com/yantrashala/yantrashala.github.io",
-  "authors": [
-    "yantrashala page owners"
-  ],
-  "description": "Yantrashala is Sapient Nitro's Open Source initiative. Here you can find open source modules that was developed with a little pinch of innovation and a lot of passion for opensource.",
+  "name": "Yummy-Jekyll",
+  "description": "Jekyll Theme",
   "main": "",
   "keywords": [
-    "yantrashala",
-    "blog"
+    "jekyll"
+  ],
+  "authors": [
+    "DONG Chuan"
   ],
   "license": "MIT",
-  "private": true,
+  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -23,7 +21,9 @@
     "bootstrap": "^3.3.6",
     "octicons": "^3.5.0",
     "hover": "^2.0.2",
+    "geopattern": "^1.2.3",
     "underscore": "^1.8.3",
+    "primer-markdown": "^2.5.1",
     "flag-icon-css": "^2.3.1"
   }
 }
