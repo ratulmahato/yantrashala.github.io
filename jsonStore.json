@@ -1,6 +1,20 @@
 {
   "packages": [
     {
+      "name": "gulp-loopback-swagger-validator",
+      "contributors": [
+        {
+          "name": "Prashant",
+          "npmName": "pbhadauria2000"
+        },
+        {
+          "name": "Naveen Meher",
+          "npmName": "mennu"
+        }
+      ],
+      "downloads": 82
+    },
+    {
       "name": "loopback-component-visualizer",
       "contributors": [
         {
@@ -16,7 +30,7 @@
           "npmName": "mennu"
         }
       ],
-      "downloads": 99
+      "downloads": 103
     },
     {
       "name": "m1js",
@@ -26,7 +40,7 @@
           "npmName": "mennu"
         }
       ],
-      "downloads": 186
+      "downloads": 188
     },
     {
       "name": "loopback-audit-trail",
@@ -46,7 +60,7 @@
           "npmName": "Prashant Bhadauria"
         }
       ],
-      "downloads": 694
+      "downloads": 708
     },
     {
       "name": "loopback-component-visualizer",
@@ -64,7 +78,7 @@
           "npmName": "mennu"
         }
       ],
-      "downloads": 99
+      "downloads": 103
     },
     {
       "name": "loopback-connector-flexirest",
@@ -84,7 +98,7 @@
           "npmName": "pbhadauria2000"
         }
       ],
-      "downloads": 309
+      "downloads": 310
     },
     {
       "name": "sodium_chloride",
@@ -104,7 +118,7 @@
           "npmName": "prashantb"
         }
       ],
-      "downloads": 113
+      "downloads": 114
     },
     {
       "name": "loopback-component-visualizer",
@@ -122,7 +136,7 @@
           "npmName": "mennu"
         }
       ],
-      "downloads": 99
+      "downloads": 103
     },
     {
       "name": "nodefighter",
@@ -132,7 +146,7 @@
           "npmName": "prashantb"
         }
       ],
-      "downloads": 972
+      "downloads": 979
     },
     {
       "name": "npm-username",
@@ -142,7 +156,7 @@
           "npmName": "prashantb"
         }
       ],
-      "downloads": 184
+      "downloads": 186
     },
     {
       "name": "natwarlal",
@@ -152,7 +166,7 @@
           "npmName": "lahirs2"
         }
       ],
-      "downloads": 59
+      "downloads": 60
     },
     {
       "name": "natwarlal-admin",
@@ -162,7 +176,7 @@
           "npmName": "lahirs2"
         }
       ],
-      "downloads": 59
+      "downloads": 60
     },
     {
       "name": "ncmd",
@@ -172,7 +186,7 @@
           "npmName": "lahirs2"
         }
       ],
-      "downloads": 235
+      "downloads": 236
     },
     {
       "name": "glassie",
@@ -182,7 +196,7 @@
           "npmName": "abinpal"
         }
       ],
-      "downloads": 47
+      "downloads": 48
     },
     {
       "name": "lockpc",
@@ -202,7 +216,7 @@
           "npmName": "abinpal"
         }
       ],
-      "downloads": 4461
+      "downloads": 4467
     },
     {
       "name": "npm-jira",
@@ -222,7 +236,7 @@
           "npmName": "rahulj_"
         }
       ],
-      "downloads": 44
+      "downloads": 45
     },
     {
       "name": "buildnpmtemplates",
@@ -232,7 +246,7 @@
           "npmName": "shafeeqonline"
         }
       ],
-      "downloads": 583
+      "downloads": 588
     },
     {
       "name": "demopackageshaf",
@@ -256,7 +270,7 @@
           "npmName": "Shafeeq @shafeeqonline"
         }
       ],
-      "downloads": 762
+      "downloads": 769
     },
     {
       "name": "prouix",
@@ -270,7 +284,7 @@
           "npmName": "Rahul Sheela"
         }
       ],
-      "downloads": 1571
+      "downloads": 1579
     },
     {
       "name": "sassfromjson-loader",
@@ -280,7 +294,7 @@
           "npmName": "shafeeqonline"
         }
       ],
-      "downloads": 109
+      "downloads": 110
     },
     {
       "name": "shafeeqplugin",
@@ -300,7 +314,7 @@
           "npmName": "js2sdk"
         }
       ],
-      "downloads": 156
+      "downloads": 157
     },
     {
       "name": "json-assembler",
@@ -313,9 +327,9 @@
       "downloads": 330
     }
   ],
-  "totalDownloads": 13330,
+  "totalDownloads": 13484,
   "totalUser": 10,
-  "lastUpdated": "2016-07-29T05:25:38.388Z",
+  "lastUpdated": "2016-08-01T09:40:10.564Z",
   "users": {
     "mennu": "Naveen Meher",
     "pbhadauria2000": "Prashant",
@@ -329,9 +343,9 @@
     "newtonflash": "Pradyumna Ghose"
   },
   "monthlyDownloads": {
-    "3": 1602,
-    "4": 3932,
+    "4": 3916,
     "5": 2827,
-    "6": 1297
+    "6": 1451,
+    "7": 0
   }
 }
