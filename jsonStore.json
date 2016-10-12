@@ -1,1 +1,351 @@
-{"packages":[{"name":"gulp-loopback-swagger-validator","contributors":[{"name":"Prashant","npmName":"pbhadauria2000"},{"name":"Naveen Meher","npmName":"mennu"}],"downloads":158},{"name":"loopback-component-visualizer","contributors":[{"name":"","npmName":"prashantbaid"},{"name":"Prashant","npmName":"pbhadauria2000"},{"name":"Naveen Meher","npmName":"mennu"}],"downloads":293},{"name":"m1js","contributors":[{"name":"Naveen Meher","npmName":"mennu"}],"downloads":203},{"name":"gulp-loopback-swagger-validator","contributors":[{"name":"Prashant","npmName":"pbhadauria2000"},{"name":"Naveen Meher","npmName":"mennu"}],"downloads":158},{"name":"loopback-audit-trail","contributors":[{"name":"Prashant","npmName":"pbhadauria2000"}],"downloads":133},{"name":"loopback-component-logger","contributors":[{"name":"","npmName":"Prashant Bhadauria"}],"downloads":792},{"name":"loopback-component-visualizer","contributors":[{"name":"","npmName":"prashantbaid"},{"name":"Prashant","npmName":"pbhadauria2000"},{"name":"Naveen Meher","npmName":"mennu"}],"downloads":293},{"name":"loopback-connector-flexirest","contributors":[{"name":"Prashant","npmName":"pbhadauria2000"}],"downloads":321},{"name":"loopback-glue","contributors":[{"name":"Prashant","npmName":"pbhadauria2000"}],"downloads":344},{"name":"sodium_chloride","contributors":[{"name":"Neha Chauganjkar","npmName":"nehac17"}],"downloads":571},{"name":"grtptohome","contributors":[{"name":"Prashant Baid","npmName":"prashantb"}],"downloads":123},{"name":"loopback-component-visualizer","contributors":[{"name":"","npmName":"prashantbaid"},{"name":"Prashant","npmName":"pbhadauria2000"},{"name":"Naveen Meher","npmName":"mennu"}],"downloads":293},{"name":"nodefighter","contributors":[{"name":"Prashant Baid","npmName":"prashantb"}],"downloads":1011},{"name":"npm-username","contributors":[{"name":"Prashant Baid","npmName":"prashantb"}],"downloads":200},{"name":"loopback-ssl","contributors":[{"name":"Siddhartha Lahiri","npmName":"lahirs2"}],"downloads":278},{"name":"ncmd","contributors":[{"name":"Siddhartha Lahiri","npmName":"lahirs2"}],"downloads":249},{"name":"glassie","contributors":[{"name":"Abin Pal","npmName":"abinpal"}],"downloads":54},{"name":"lockpc","contributors":[{"name":"Abin Pal","npmName":"abinpal"}],"downloads":96},{"name":"npm-install-all","contributors":[{"name":"Abin Pal","npmName":"abinpal"}],"downloads":4624},{"name":"npm-jira","contributors":[{"name":"Abin Pal","npmName":"abinpal"}],"downloads":361},{"name":"bunyan-loopback-stream","contributors":[{"name":"Rahul Jain","npmName":"rahulj_"}],"downloads":57},{"name":"buildnpmtemplates","contributors":[{"name":"Shafeeq Rahman","npmName":"shafeeqonline"}],"downloads":624},{"name":"demopackageshaf","contributors":[{"name":"Shafeeq Rahman","npmName":"shafeeqonline"}],"downloads":505},{"name":"handlebarsbuild-loader","contributors":[{"name":"","npmName":"Alan @altano"},{"name":"","npmName":"Shafeeq @shafeeqonline"}],"downloads":813},{"name":"prouix","contributors":[{"name":"","npmName":"Leslie Samuel Kingsly"},{"name":"","npmName":"Rahul Sheela"}],"downloads":1614},{"name":"sassfromjson-loader","contributors":[{"name":"Shafeeq Rahman","npmName":"shafeeqonline"}],"downloads":119},{"name":"shafeeqplugin","contributors":[{"name":"Shafeeq Rahman","npmName":"shafeeqonline"}],"downloads":360},{"name":"js2sdk","contributors":[{"name":"Rejunraj Chalat Kunnath","npmName":"js2sdk"}],"downloads":164},{"name":"json-assembler","contributors":[{"name":"Pradyumna Ghose","npmName":"newtonflash"}],"downloads":363}],"totalDownloads":15174,"totalUser":10,"lastUpdated":"2016-08-19T10:18:21.356Z","users":{"mennu":"Naveen Meher","pbhadauria2000":"Prashant","nehac17":"Neha Chauganjkar","prashantb":"Prashant Baid","lahirs2":"Siddhartha Lahiri","abinpal":"Abin Pal","rahulj_":"Rahul Jain","shafeeqonline":"Shafeeq Rahman","js2sdk":"Rejunraj Chalat Kunnath","newtonflash":"Pradyumna Ghose"},"monthlyDownloads":{"4":3830,"5":2806,"6":1520,"7":1728}}
+{
+  "packages": [
+    {
+      "name": "gulp-loopback-swagger-validator",
+      "contributors": [
+        {
+          "name": "Prashant",
+          "npmName": "pbhadauria2000"
+        },
+        {
+          "name": "Naveen Meher",
+          "npmName": "mennu"
+        }
+      ],
+      "downloads": 82
+    },
+    {
+      "name": "loopback-component-visualizer",
+      "contributors": [
+        {
+          "name": "",
+          "npmName": "prashantbaid"
+        },
+        {
+          "name": "Prashant",
+          "npmName": "pbhadauria2000"
+        },
+        {
+          "name": "Naveen Meher",
+          "npmName": "mennu"
+        }
+      ],
+      "downloads": 103
+    },
+    {
+      "name": "m1js",
+      "contributors": [
+        {
+          "name": "Naveen Meher",
+          "npmName": "mennu"
+        }
+      ],
+      "downloads": 188
+    },
+    {
+      "name": "loopback-audit-trail",
+      "contributors": [
+        {
+          "name": "Prashant",
+          "npmName": "pbhadauria2000"
+        }
+      ],
+      "downloads": 119
+    },
+    {
+      "name": "loopback-component-logger",
+      "contributors": [
+        {
+          "name": "",
+          "npmName": "Prashant Bhadauria"
+        }
+      ],
+      "downloads": 708
+    },
+    {
+      "name": "loopback-component-visualizer",
+      "contributors": [
+        {
+          "name": "",
+          "npmName": "prashantbaid"
+        },
+        {
+          "name": "Prashant",
+          "npmName": "pbhadauria2000"
+        },
+        {
+          "name": "Naveen Meher",
+          "npmName": "mennu"
+        }
+      ],
+      "downloads": 103
+    },
+    {
+      "name": "loopback-connector-flexirest",
+      "contributors": [
+        {
+          "name": "Prashant",
+          "npmName": "pbhadauria2000"
+        }
+      ],
+      "downloads": 280
+    },
+    {
+      "name": "loopback-glue",
+      "contributors": [
+        {
+          "name": "Prashant",
+          "npmName": "pbhadauria2000"
+        }
+      ],
+      "downloads": 310
+    },
+    {
+      "name": "sodium_chloride",
+      "contributors": [
+        {
+          "name": "Neha Chauganjkar",
+          "npmName": "nehac17"
+        }
+      ],
+      "downloads": 532
+    },
+    {
+      "name": "grtptohome",
+      "contributors": [
+        {
+          "name": "Prashant Baid",
+          "npmName": "prashantb"
+        }
+      ],
+      "downloads": 114
+    },
+    {
+      "name": "loopback-component-visualizer",
+      "contributors": [
+        {
+          "name": "",
+          "npmName": "prashantbaid"
+        },
+        {
+          "name": "Prashant",
+          "npmName": "pbhadauria2000"
+        },
+        {
+          "name": "Naveen Meher",
+          "npmName": "mennu"
+        }
+      ],
+      "downloads": 103
+    },
+    {
+      "name": "nodefighter",
+      "contributors": [
+        {
+          "name": "Prashant Baid",
+          "npmName": "prashantb"
+        }
+      ],
+      "downloads": 979
+    },
+    {
+      "name": "npm-username",
+      "contributors": [
+        {
+          "name": "Prashant Baid",
+          "npmName": "prashantb"
+        }
+      ],
+      "downloads": 186
+    },
+    {
+      "name": "natwarlal",
+      "contributors": [
+        {
+          "name": "Siddhartha Lahiri",
+          "npmName": "lahirs2"
+        }
+      ],
+      "downloads": 60
+    },
+    {
+      "name": "natwarlal-admin",
+      "contributors": [
+        {
+          "name": "Siddhartha Lahiri",
+          "npmName": "lahirs2"
+        }
+      ],
+      "downloads": 60
+    },
+    {
+      "name": "ncmd",
+      "contributors": [
+        {
+          "name": "Siddhartha Lahiri",
+          "npmName": "lahirs2"
+        }
+      ],
+      "downloads": 236
+    },
+    {
+      "name": "glassie",
+      "contributors": [
+        {
+          "name": "Abin Pal",
+          "npmName": "abinpal"
+        }
+      ],
+      "downloads": 48
+    },
+    {
+      "name": "lockpc",
+      "contributors": [
+        {
+          "name": "Abin Pal",
+          "npmName": "abinpal"
+        }
+      ],
+      "downloads": 87
+    },
+    {
+      "name": "npm-install-all",
+      "contributors": [
+        {
+          "name": "Abin Pal",
+          "npmName": "abinpal"
+        }
+      ],
+      "downloads": 4467
+    },
+    {
+      "name": "npm-jira",
+      "contributors": [
+        {
+          "name": "Abin Pal",
+          "npmName": "abinpal"
+        }
+      ],
+      "downloads": 336
+    },
+    {
+      "name": "bunyan-loopback-stream",
+      "contributors": [
+        {
+          "name": "Rahul Jain",
+          "npmName": "rahulj_"
+        }
+      ],
+      "downloads": 45
+    },
+    {
+      "name": "buildnpmtemplates",
+      "contributors": [
+        {
+          "name": "Shafeeq Rahman",
+          "npmName": "shafeeqonline"
+        }
+      ],
+      "downloads": 588
+    },
+    {
+      "name": "demopackageshaf",
+      "contributors": [
+        {
+          "name": "Shafeeq Rahman",
+          "npmName": "shafeeqonline"
+        }
+      ],
+      "downloads": 474
+    },
+    {
+      "name": "handlebarsbuild-loader",
+      "contributors": [
+        {
+          "name": "",
+          "npmName": "Alan @altano"
+        },
+        {
+          "name": "",
+          "npmName": "Shafeeq @shafeeqonline"
+        }
+      ],
+      "downloads": 769
+    },
+    {
+      "name": "prouix",
+      "contributors": [
+        {
+          "name": "",
+          "npmName": "Leslie Samuel Kingsly"
+        },
+        {
+          "name": "",
+          "npmName": "Rahul Sheela"
+        }
+      ],
+      "downloads": 1579
+    },
+    {
+      "name": "sassfromjson-loader",
+      "contributors": [
+        {
+          "name": "Shafeeq Rahman",
+          "npmName": "shafeeqonline"
+        }
+      ],
+      "downloads": 110
+    },
+    {
+      "name": "shafeeqplugin",
+      "contributors": [
+        {
+          "name": "Shafeeq Rahman",
+          "npmName": "shafeeqonline"
+        }
+      ],
+      "downloads": 331
+    },
+    {
+      "name": "js2sdk",
+      "contributors": [
+        {
+          "name": "Rejunraj Chalat Kunnath",
+          "npmName": "js2sdk"
+        }
+      ],
+      "downloads": 157
+    },
+    {
+      "name": "json-assembler",
+      "contributors": [
+        {
+          "name": "Pradyumna Ghose",
+          "npmName": "newtonflash"
+        }
+      ],
+      "downloads": 330
+    }
+  ],
+  "totalDownloads": 13484,
+  "totalUser": 10,
+  "lastUpdated": "2016-08-01T09:40:10.564Z",
+  "users": {
+    "mennu": "Naveen Meher",
+    "pbhadauria2000": "Prashant",
+    "nehac17": "Neha Chauganjkar",
+    "prashantb": "Prashant Baid",
+    "lahirs2": "Siddhartha Lahiri",
+    "abinpal": "Abin Pal",
+    "rahulj_": "Rahul Jain",
+    "shafeeqonline": "Shafeeq Rahman",
+    "js2sdk": "Rejunraj Chalat Kunnath",
+    "newtonflash": "Pradyumna Ghose"
+  },
+  "monthlyDownloads": {
+    "4": 3916,
+    "5": 2827,
+    "6": 1451,
+    "7": 0
+  }
+}

@@ -1,102 +1,104 @@
-define([
-    "../core",
-    "./var/rtagName",
-    "./var/rscriptType",
-    "./wrapMap",
-    "./getAll",
-    "./setGlobalEval"
-], function (jQuery, rtagName, rscriptType, wrapMap, getAll, setGlobalEval) {
+define( [
+	"../core",
+	"./var/rtagName",
+	"./var/rscriptType",
+	"./wrapMap",
+	"./getAll",
+	"./setGlobalEval"
+], function( jQuery, rtagName, rscriptType, wrapMap, getAll, setGlobalEval ) {
 
-    var rhtml = /<|&#?\w+;/;
+"use strict";
 
-    function buildFragment(elems, context, scripts, selection, ignored) {
-        var elem, tmp, tag, wrap, contains, j,
-            fragment = context.createDocumentFragment(),
-            nodes = [],
-            i = 0,
-            l = elems.length;
+var rhtml = /<|&#?\w+;/;
 
-        for (; i < l; i++) {
-            elem = elems[i];
+function buildFragment( elems, context, scripts, selection, ignored ) {
+	var elem, tmp, tag, wrap, contains, j,
+		fragment = context.createDocumentFragment(),
+		nodes = [],
+		i = 0,
+		l = elems.length;
 
-            if (elem || elem === 0) {
+	for ( ; i < l; i++ ) {
+		elem = elems[ i ];
 
-                // Add nodes directly
-                if (jQuery.type(elem) === "object") {
+		if ( elem || elem === 0 ) {
 
-                    // Support: Android<4.1, PhantomJS<2
-                    // push.apply(_, arraylike) throws on ancient WebKit
-                    jQuery.merge(nodes, elem.nodeType ? [elem] : elem);
+			// Add nodes directly
+			if ( jQuery.type( elem ) === "object" ) {
 
-                    // Convert non-html into a text node
-                } else if (!rhtml.test(elem)) {
-                    nodes.push(context.createTextNode(elem));
+				// Support: Android <=4.0 only, PhantomJS 1 only
+				// push.apply(_, arraylike) throws on ancient WebKit
+				jQuery.merge( nodes, elem.nodeType ? [ elem ] : elem );
 
-                    // Convert html into DOM nodes
-                } else {
-                    tmp = tmp || fragment.appendChild(context.createElement("div"));
+			// Convert non-html into a text node
+			} else if ( !rhtml.test( elem ) ) {
+				nodes.push( context.createTextNode( elem ) );
 
-                    // Deserialize a standard representation
-                    tag = ( rtagName.exec(elem) || ["", ""] )[1].toLowerCase();
-                    wrap = wrapMap[tag] || wrapMap._default;
-                    tmp.innerHTML = wrap[1] + jQuery.htmlPrefilter(elem) + wrap[2];
+			// Convert html into DOM nodes
+			} else {
+				tmp = tmp || fragment.appendChild( context.createElement( "div" ) );
 
-                    // Descend through wrappers to the right content
-                    j = wrap[0];
-                    while (j--) {
-                        tmp = tmp.lastChild;
-                    }
+				// Deserialize a standard representation
+				tag = ( rtagName.exec( elem ) || [ "", "" ] )[ 1 ].toLowerCase();
+				wrap = wrapMap[ tag ] || wrapMap._default;
+				tmp.innerHTML = wrap[ 1 ] + jQuery.htmlPrefilter( elem ) + wrap[ 2 ];
 
-                    // Support: Android<4.1, PhantomJS<2
-                    // push.apply(_, arraylike) throws on ancient WebKit
-                    jQuery.merge(nodes, tmp.childNodes);
+				// Descend through wrappers to the right content
+				j = wrap[ 0 ];
+				while ( j-- ) {
+					tmp = tmp.lastChild;
+				}
 
-                    // Remember the top-level container
-                    tmp = fragment.firstChild;
+				// Support: Android <=4.0 only, PhantomJS 1 only
+				// push.apply(_, arraylike) throws on ancient WebKit
+				jQuery.merge( nodes, tmp.childNodes );
 
-                    // Ensure the created nodes are orphaned (#12392)
-                    tmp.textContent = "";
-                }
-            }
-        }
+				// Remember the top-level container
+				tmp = fragment.firstChild;
 
-        // Remove wrapper from fragment
-        fragment.textContent = "";
+				// Ensure the created nodes are orphaned (#12392)
+				tmp.textContent = "";
+			}
+		}
+	}
 
-        i = 0;
-        while (( elem = nodes[i++] )) {
+	// Remove wrapper from fragment
+	fragment.textContent = "";
 
-            // Skip elements already in the context collection (trac-4087)
-            if (selection && jQuery.inArray(elem, selection) > -1) {
-                if (ignored) {
-                    ignored.push(elem);
-                }
-                continue;
-            }
+	i = 0;
+	while ( ( elem = nodes[ i++ ] ) ) {
 
-            contains = jQuery.contains(elem.ownerDocument, elem);
+		// Skip elements already in the context collection (trac-4087)
+		if ( selection && jQuery.inArray( elem, selection ) > -1 ) {
+			if ( ignored ) {
+				ignored.push( elem );
+			}
+			continue;
+		}
 
-            // Append to fragment
-            tmp = getAll(fragment.appendChild(elem), "script");
+		contains = jQuery.contains( elem.ownerDocument, elem );
 
-            // Preserve script evaluation history
-            if (contains) {
-                setGlobalEval(tmp);
-            }
+		// Append to fragment
+		tmp = getAll( fragment.appendChild( elem ), "script" );
 
-            // Capture executables
-            if (scripts) {
-                j = 0;
-                while (( elem = tmp[j++] )) {
-                    if (rscriptType.test(elem.type || "")) {
-                        scripts.push(elem);
-                    }
-                }
-            }
-        }
+		// Preserve script evaluation history
+		if ( contains ) {
+			setGlobalEval( tmp );
+		}
 
-        return fragment;
-    }
+		// Capture executables
+		if ( scripts ) {
+			j = 0;
+			while ( ( elem = tmp[ j++ ] ) ) {
+				if ( rscriptType.test( elem.type || "" ) ) {
+					scripts.push( elem );
+				}
+			}
+		}
+	}
 
-    return buildFragment;
-});
+	return fragment;
+}
+
+return buildFragment;
+} );

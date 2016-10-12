@@ -1,57 +1,60 @@
 {% assign sorted_repos = (site.github.nodecontributors)  %}
 <div id="container-open-source">
-  <section class="container">
-    <div id="canvasContainer">
-      <canvas id="myChart" width="800" height="400"></canvas>
-    </div>
-    <h2 id="contibute-title">
-      List of NPM modules contributing to the downloads
-    </h2>
-  </section>
+	<section class="container">
+		<div id="canvasContainer">
+			<canvas id="myChart" width="800" height="400"></canvas>
+		</div>
+		<h2 id="contibute-title">
+			List of NPM modules contributing to the downloads
+		</h2>
+	</section>
 
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
 <script>
-$(document).ready(function(){
-  var ctx = document.getElementById("myChart").getContext("2d");
+	$(document).ready(function () {
+		var ctx = document.getElementById("myChart").getContext("2d");
 
-  function createChart (data) {
-    var DownloadsArray = $.map(data.monthlyDownloads, function(value, index) {
-      return [value];
-    });
-    var myChart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ["April", "May", "June", "July"],
-        datasets: [{
-          label: '# of Downloads',
-          data: DownloadsArray,
-          backgroundColor: ['rgba(0,188,212, 0.6)', 'rgba(3,169,244, 0.6)', 'rgba(33,150,243, 0.6)', 'rgba(21,101,192, 0.6)'],
-          borderColor: ['rgba(0,188,212,1)', 'rgba(3,169,244, 1)', 'rgba(33,150,243, 1)', 'rgba(21,101,192, 1)'],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero:true
-            }
-          }]
-        }
-      }
-    });
-  }
+		function createChart(data) {
+			var DownloadsArray = $.map(data.monthlyDownloads, function (value, index) {
+				return [value];
+			});
+			var myChart = new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: ["April", "May", "June", "July"],
+					datasets: [{
+						label: '# of Downloads',
+						data: DownloadsArray,
+						backgroundColor: ['rgba(0,188,212, 0.6)', 'rgba(3,169,244, 0.6)', 'rgba(33,150,243, 0.6)', 'rgba(21,101,192, 0.6)'],
+						borderColor: ['rgba(0,188,212,1)', 'rgba(3,169,244, 1)', 'rgba(33,150,243, 1)', 'rgba(21,101,192, 1)'],
+						borderWidth: 1
+					}]
+				},
+				options: {
+					scales: {
+						yAxes: [{
+							ticks: {
+								beginAtZero: true
+							}
+						}]
+					}
+				}
+			});
+		}
 
-  function createPackageBox(data){
-    data.packages.map(function(package){
-      var mainAnchorOuter = $('<a>').addClass('col-sm-6 col-md-4').attr({'href': 'https://www.npmjs.com/package/'+package.name, 'target': '_blank'});
-      var mainAnchor = $('<div>').addClass('main-anchor').appendTo(mainAnchorOuter);
-      $('<span>').addClass('package-name').text(package.name).appendTo(mainAnchor);
-      $('<span>').addClass('octicon octicon-globe').prependTo($('<span>').addClass('package-downloads pull-right').text(package.downloads).appendTo(mainAnchor));
-      $('#contributors').append(mainAnchorOuter);
-    })
-  }
+		function createPackageBox(data) {
+			data.packages.map(function (package) {
+				var mainAnchorOuter = $('<a>').addClass('col-sm-6 col-md-4').attr({
+					'href': 'https://www.npmjs.com/package/' + package.name,
+					'target': '_blank'
+				});
+				var mainAnchor = $('<div>').addClass('main-anchor').appendTo(mainAnchorOuter);
+				$('<span>').addClass('package-name').text(package.name).appendTo(mainAnchor);
+				$('<span>').addClass('octicon octicon-globe').prependTo($('<span>').addClass('package-downloads pull-right').text(package.downloads).appendTo(mainAnchor));
+				$('#contributors').append(mainAnchorOuter);
+			})
+		}
 
   $.ajax({
     url: "https://raw.githubusercontent.com/yantrashala/yantrashala.github.io/master/jsonStore.json",
@@ -61,13 +64,12 @@ $(document).ready(function(){
     createChart(data);
     createPackageBox(data);
   })
+		// Enable bootstrap tooltip
+		$("body").tooltip({ selector: '[data-toggle=tooltip]' });
 
-  // Enable bootstrap tooltip
-  $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+		$('.geopattern').each(function () {
+			$(this).geopattern($(this).data('pattern-id'));
+		});
 
-  $('.geopattern').each(function(){
-    $(this).geopattern($(this).data('pattern-id'));
-  });
-
-});
+	});
 </script>
