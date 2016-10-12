@@ -38,7 +38,7 @@ lsi:         false
 excerpt_separator: "\n\n"
 
 source:      .
-destination: ./_site
+destination: ./_site1
 
 quiet:    false
 defaults: []

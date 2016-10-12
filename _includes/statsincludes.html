@@ -56,15 +56,14 @@
 			})
 		}
 
-		$.ajax({
-			url: "/jsonStore.json",
-			dataType: "json"
-		})
-			.done(function (data) {
-				createChart(data);
-				createPackageBox(data);
-			});
-
+  $.ajax({
+    url: "https://raw.githubusercontent.com/yantrashala/yantrashala.github.io/master/jsonStore.json",
+    dataType: "json"
+  })
+  .done(function(data){
+    createChart(data);
+    createPackageBox(data);
+  })
 		// Enable bootstrap tooltip
 		$("body").tooltip({ selector: '[data-toggle=tooltip]' });
 
