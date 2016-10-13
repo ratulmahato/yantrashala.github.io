@@ -13,16 +13,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
 <script>
 	$(document).ready(function () {
+		var months = ["", "Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
 		var ctx = document.getElementById("myChart").getContext("2d");
 
 		function createChart(data) {
 			var DownloadsArray = $.map(data.monthlyDownloads, function (value, index) {
 				return [value];
 			});
+			var mon = Object.keys(data.monthlyDownloads);
+			var tt = [];
+			mon.map(function(item) {
+				tt.push(months[item]);
+			})
+
 			var myChart = new Chart(ctx, {
 				type: 'bar',
 				data: {
-					labels: ["April", "May", "June", "July"],
+					labels: tt,
 					datasets: [{
 						label: '# of Downloads',
 						data: DownloadsArray,
