@@ -60,7 +60,7 @@ navs:
   #  label: Blog
 
   -
-    href: /stats
+    href: /stats.html
     label: Stats
 
   #-
